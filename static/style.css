@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background: #fafafa;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+/* Content Styles */
+
+#content {
+  width: 100%;
+  /* padding: 5px; */
+  min-height: 100vh;
+}
+
+.navbar {
+  padding: 20px 10px;
+  border: 0px;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: 6px 2px 6px rgb(191, 191, 191);
+}
+
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+  /* background: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 6px rgb(191, 191, 191); */
+}
+
+.navbar-header {
+  float: left;
+  padding-left: 2%;
+}
+
+
+/* Other Styles */
+.beta-badge {
+  background: #5f5fff;
+  color: #fff;
+  padding: 2px 5px;
+  font-size: 18px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+/* Callout Styles */
+.callout {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+
+.callout-warning {
+  border-left-color: #f34b59;
+  background: #fadfe3;
+}
+
+.callout-info {
+  border-left-color: #5bc0de;
+  background: #dfeefa;
+}
+
+/* Form Styles */
+#form-container {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 6px rgb(191, 191, 191);
+}
+
+#form-heading {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.form-control-lg {
+  font-size: 16px;
+}
+
+#submit-btn {
+  font-size: 18px;
+  font-weight: 500;
+  float: right;
+}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block nav_home %}active{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div id="form-heading">
+            <p>Match your research article or manuscript <span class="beta-badge">Beta</span></p>
+        </div>
+        <div id="form-description">
+            <p>Confused which journal to publish your article? Manuscript Matcher Beta can help you find journals that may be relevant to your
+            research field. Just enter the title and abstract of the manuscript and it will suggest you journals based on the information.</p>
+        </div>
+        <div class="callout callout-info">
+            Please review the <strong>Aims and Scopes</strong> of the journal before making a final decision on where to submit.
+        </div>
+        <div id="form-description">
+            <p>Please enter your manuscript information below</p>
+        </div>
+        <div class="search-form">
+            <form action="/" method="post">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <textarea class="form-control form-control-lg" name="title" id="title" rows="1" required></textarea>
+                    <small id="titleHelp" class="form-text text-muted">The article or manuscript title. Maximum 250 characters.</small>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="abstract">Abstract</label>
+                    <textarea class="form-control form-control-lg" name="abstract" id="abstract" rows="3" required></textarea>
+                    <small id="abstractHelp" class="form-text text-muted">The article or manuscript abstract. Maximum 3,000 characters.</small>
+                </div>
+                <input type="submit" value="Match Manuscript" id="submit-btn" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+{% endblock content %}
