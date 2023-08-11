@@ -34,4 +34,13 @@
             </form>
         </div>
     </div>
+
+    {% if output_text %}
+        <div class="container search-results">
+            <div>
+                <p>Journal Category: {{ output_text }}</p>
+            </div>
+        </div>
+    {% endif %}
+
 {% endblock content %}
