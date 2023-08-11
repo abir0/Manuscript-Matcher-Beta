@@ -12,8 +12,9 @@ def home():
         input_title = request.form.get('title')
         input_abstract = request.form.get('abstract')
         output = predict_category(input_title, input_abstract)
-        print(output)
-        return render_template("index.html", title="Home", output_text=output['data'][0]['label'])
+        print(output['data'])
+        output_text = output['data'][0]['label']
+        return render_template("index.html", title="Home", output_text=output_text)
     else:
         return render_template("index.html", title="Home")
 
