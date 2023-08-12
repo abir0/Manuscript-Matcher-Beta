@@ -103,10 +103,14 @@ label {
 
 /* Search Results Styles */
 .search-results {
-  padding-left: 10%;
-  padding-right: 10%;
   padding-top: 80px;
   /* background: #fff; */
   /* border-radius: 4px;
   box-shadow: 0px 0px 6px rgb(191, 191, 191); */
+}
+
+.search-results-title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }

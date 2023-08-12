@@ -3,7 +3,7 @@
 {% block nav_home %}active{% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="container container-main">
         <div id="form-heading">
             <p>Match your research article or manuscript <span class="beta-badge">Beta</span></p>
         </div>
@@ -33,14 +33,25 @@
                 <input type="submit" value="Match Manuscript" id="submit-btn" class="btn btn-primary">
             </form>
         </div>
-    </div>
 
-    {% if output_text %}
-        <div class="container search-results">
-            <div>
-                <p>Journal Category: {{ output_text }}</p>
+        {% if output_text %}
+            <div class="search-results">
+                <div>
+                    <div class="search-results-title">
+                        <p>Search Results</p>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">{{ output_text }}</h5>
+                                <p class="card-text">This journal categoty is the best match for your manuscript.</p>
+                                <p class="card-text"><small class="text-body-secondary">More features coming soon...</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    {% endif %}
+        {% endif %}
+    </div>
 
 {% endblock content %}
